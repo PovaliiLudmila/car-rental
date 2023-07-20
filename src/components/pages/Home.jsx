@@ -1,8 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { Box, Heading, Text, Button, Image } from '@chakra-ui/react';
 
-import welcome from '../images/welcome.svg';
-
 export default function Home() {
   return (
     <Box position="relative">
@@ -19,7 +17,7 @@ export default function Home() {
           <Heading fontSize="80" fontWeight="700" lineHeight="90%" mb="10">
             WELCOME TO YOUR <br></br> PHONEBOOK
           </Heading>
-          <Text
+          {/* <Text
             color="brand.main"
             fontSize="25"
             fontWeight="500"
@@ -29,7 +27,7 @@ export default function Home() {
             Organize your contacts easily and stay connected <br></br>with loved
             ones. Use digital tools to create and maintain <br></br>a
             comprehensive contact list, and keep in touch through PHONEBOOK.
-          </Text>
+          </Text> */}
           <NavLink to="/register">
             <Button
               color="brand.main"
