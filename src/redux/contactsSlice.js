@@ -7,9 +7,10 @@ import {
 
 import { selectContacts } from './selectors';
 
-axios.defaults.baseURL = 'https://64aac02a0c6d844abedec842.mockapi.io/contacts';
+axios.defaults.baseURL = 'https://connections-api.herokuapp.com';
 
-export const fetchContacts = createAsyncThunk('contacts/fetchAll', async () => {
+export const fetchContacts = createAsyncThunk('contacts/fetchAll', 
+async () => {
   try {
     const { data } = await axios.get('/contacts');
     return data;
